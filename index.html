@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en-US">
+    <head>
+        <link rel="stylesheet" href="styles/home.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <script src="scripts/home.js" defer></script>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <meta name="description" content="Ben Wasden WDD 231 - Course Home Page">
+        <meta name="author" content="Benjamin Wasden">
+        <title>Ben Wasden - WDD 231 Course Page</title>
+    </head>
+    <body>
+        <header>
+            <div id="bio">
+                <img src="images/profile.webp" alt="Picture of me" width="100" height="100" loading="lazy">
+                <h1>Ben Wasden</h1>
+            </div>
+            <button title="Hamburger Menu Button" id="menu"></button>
+            <nav class="navigation">
+                <a href="index.html" class="active">Home</a>
+                <a href="#">Chamber</a>
+                <a href="#">Github Profile</a>
+                <a href="https://www.linkedin.com/">LinkedIn</a>
+            </nav>
+        </header>
+        <main>
+            <div class="container">
+                <section class="coursework">
+                    <h2>Course Work</h2>
+                    <ul id="courses">
+                        
+                    </ul>
+                </section>
+                <section class="location">
+                    <h2>Oakland, California</h2>
+                    <figure>
+                        <img src="images/oakland.webp" alt="Picture of the Oakland Temple" width="300" height="225">
+                        <figcaption>Oakland Temple</figcaption>
+                    </figure>
+                </section>
+            </div>
+            <section class="certificate">
+                <h2>Web and Computer Programming Certificate</h2>
+                <div id="credits"></div>
+                <div id="completed-credits"></div>
+                <div class="filter">
+                    <button id="all">All Courses</button>
+                    <button id="cse">CSE Courses</button>
+                    <button id="wdd">WDD Courses</button>
+                </div>
+                <div id="course-displays"></div>
+            </section>
+        </main>
+        <footer>
+            <div class="footer-p">
+                <p>©<span id="currentyear"></span> | Benjamin Wasden | United States, California</p>
+                <p>Last Modified: <span id="lastModified"></span></p>
+            </div>
+            <img src="images/californiaflag.webp" alt="California flag" width="40" height="26">
+        </footer>
+    </body>
+</html>
