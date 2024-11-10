@@ -170,9 +170,9 @@ section #completed {
 .filter button {
     padding: 10px;
     margin: 3px;
-    font-size: 14px;
+    font-size: 15px;
     color: white;
-    background-color: gray;
+    background-color: rgb(61, 61, 61);
     border-radius: 5px;
 }
 .navigation .active {
