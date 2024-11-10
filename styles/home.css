@@ -172,7 +172,7 @@ section #completed {
     margin: 3px;
     font-size: 15px;
     color: white;
-    background-color: rgb(56, 55, 55);
+    background-color: darkslategrey;
     border-radius: 5px;
 }
 .navigation .active {
