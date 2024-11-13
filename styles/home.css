@@ -46,7 +46,7 @@ footer img {
 #bio {
     display: flex;
     max-width: 400px;
-    margin: auto;
+    margin: 0 auto;
     align-items: center;
 }
 #menu {
@@ -54,7 +54,7 @@ footer img {
     border: 0;
     background: none;
     position: absolute;
-    top: 1rem;
+    top: -3px;
     right: 1rem;
     font-size: 50px;
 }
