@@ -1,0 +1,30 @@
+[
+    {
+        "family_name": "Wasden",
+        "move_in_date": "09-12-1992",
+        "family_count": 4,
+        "bishopric_visit": true,
+        "family_members": [
+            {
+                "name": "Steve Wasden",
+                "gender": "male",
+                "birth": "06-11-1964"
+            },
+            {
+                "name": "Sonya Wasden",
+                "gender": "female",
+                "birth": "06-20-1965"
+            },
+            {
+                "name": "Chris Wasden",
+                "gender": "male",
+                "birth": "09-29-1989"
+            },
+            {
+                "name": "Allison Wasden",
+                "gender": "female",
+                "birth": "09-29-1989"
+            }
+        ]
+    }
+]
