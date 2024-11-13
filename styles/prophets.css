@@ -1,0 +1,67 @@
+:root {
+    --primary-color: #678d58;
+    --secondary-color: #5a544b;
+
+    --heading-font: "Funnel Display", sans-serif;
+    --paragraph-font: "Montserrat", sans-serif;
+}
+* {
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+header {
+    background-color: var(--primary-color);
+    font-family: var(--heading-font);
+    text-align: center;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+.filter {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    border-bottom: solid 1px;
+    padding-bottom: 7px;
+}
+.filter button {
+    padding: 10px;
+    margin: 3px;
+    font-size: 15px;
+    color: white;
+    background-color: darkslategrey;
+    border-radius: 5px;
+    font-family: var(--paragraph-font);
+}
+section {
+    background-color: var(--secondary-color);
+    /* padding: 15px; */
+    display: grid;
+    margin: 10px;
+    text-align: center;
+}
+section img {
+    width: 100%;
+    height: 100%;
+}
+#cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(275px, 2fr));
+    padding: 15px;
+}
+h2 {
+    font-family: var(--heading-font);
+    padding: 10px;
+}
+footer {
+    background-color: var(--primary-color);
+    text-align: center;
+    font-family: var(--paragraph-font);
+    padding: 10px;
+}
+p {
+    font-family: var(--paragraph-font);
+    font-size: 13px;
+    font-style: italic;
+    padding: 5px;
+}

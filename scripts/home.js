@@ -105,7 +105,6 @@ displayCourseInfo(courses);
 // Button to show all courses
 const allCoursesButton = document.querySelector('#all');
 allCoursesButton.addEventListener('click', () => {
-    filter = "all";
     displayCourseCards(courses);
     displayCourseInfo(courses);
 })
@@ -113,7 +112,6 @@ allCoursesButton.addEventListener('click', () => {
 // Button to show CSE courses
 const cseCoursesButton = document.querySelector('#cse');
 cseCoursesButton.addEventListener('click', () => {
-    filter = "cse";
     displayCourseCards(courses.filter(course => course.subject == 'CSE'));
     displayCourseInfo(courses.filter(course => course.subject == 'CSE'));
 })
@@ -121,7 +119,6 @@ cseCoursesButton.addEventListener('click', () => {
 // Button to show WDD courses
 const wddCoursesButton = document.querySelector('#wdd');
 wddCoursesButton.addEventListener('click', () => {
-    filter = "wdd";
     displayCourseCards(courses.filter(course => course.subject == 'WDD'));
     displayCourseInfo(courses.filter(course => course.subject == 'WDD'));
 })

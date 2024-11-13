@@ -2,6 +2,9 @@
 <html lang="en">
     <head>
         <link rel="stylesheet" href="styles/prophets.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
         <script src="scripts/prophets.js" defer></script>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width">
@@ -14,6 +17,14 @@
             <h1>Latter-day Prophets</h1>
         </header>
         <main>
+            <div class="filter">
+                <button id="all">All</button>
+                <button id="utah">Born in Utah</button>
+                <button id="us">Born outside US</button>
+                <button id="age">Lived 95+ years</button>
+                <button id="kids">More than 10 Children</button>
+                <button id="served">Served 15+ years as Prophet</button>
+            </div>
             <div id="cards"></div>
         </main>
         <footer>
