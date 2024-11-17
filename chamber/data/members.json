@@ -1,0 +1,81 @@
+{
+        "businesses": [
+        {
+            "name": "Old Adobe School District",
+            "address": "845 Crinella Drive",
+            "city": "Petaluma, CA 94954",
+            "phone": "(707) 765-4321",
+            "website": "https://www.oldadobe.org",
+            "image": "images/oldadobe.webp",
+            "width": 150,
+            "height": 71,
+            "membership": 3
+        },
+        {
+            "name": "Dr. Bob Koenitzer DDS",
+            "address": "101 Lynch Creek Way",
+            "city": "Petaluma, CA 94954",
+            "phone": "(707) 241-4495",
+            "website": "https://www.petalumasmiles.com",
+            "image": "images/dentist.webp",
+            "width": 70,
+            "height": 70,
+            "membership": 2
+        },
+        {
+            "name": "Kirk Orthodontist",
+            "address": "3835 Cypress Drive",
+            "city": "Petaluma, CA 94954",
+            "phone": "(707) 762-8047",
+            "website": "https://www.smilesbykirk.com",
+            "image": "images/ortho.webp",
+            "width": 150,
+            "height": 68,
+            "membership": 2
+        },
+        {
+            "name": "Nostalgia Alley",
+            "address": "36 Petaluma Blvd N",
+            "city": "Petaluma, CA 94952",
+            "phone": "(707) 774-6485",
+            "website": "https://www.facebook.com/nostalgiaalley",
+            "image": "images/nostalgia.webp",
+            "width": 70,
+            "height": 70,
+            "membership": 2
+        },
+        {
+            "name": "Redwood Credit Union",
+            "address": "301 N McDowell Blvd",
+            "city": "Petaluma, CA 94954",
+            "phone": "(707) 545-4000",
+            "website": "https://www.redwoodcu.org",
+            "image": "images/rcu.webp",
+            "width": 150,
+            "height": 55,
+            "membership": 3
+        },
+        {
+            "name": "Cinema West",
+            "address": "200 C Street",
+            "city": "Petaluma, CA 94952",
+            "phone": "(707) 762-7469",
+            "website": "https://www.cinemawest.com/locations",
+            "image": "images/cw.webp",
+            "width": 70,
+            "height": 70,
+            "membership": 3
+        },
+        {
+            "name": "Twintail Design Group",
+            "address": "1234 Design Road",
+            "city": "Petaluma, CA 94954",
+            "phone": "(707) 123-4567",
+            "website": "https://www.linkedin.com",
+            "image": "images/design.webp",
+            "width": 70,
+            "height": 71,
+            "membership": 1
+        }
+    ]
+}

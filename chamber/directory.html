@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en-US">
+    <head>
+        <link rel="stylesheet" href="styles/directory.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <script src="scripts/directory.js" defer></script>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <link rel="icon" href="images/chicken.ico">
+        <meta name="description" content="Ben Wasden WDD 231 - Chamber Directory Page">
+        <meta name="author" content="Benjamin Wasden">
+
+        <meta property="og:title" content="Ben Wasden's Chamber Page">
+        <meta property="og:description" content="Chamber of Commerce Directory Page">
+        <meta property="og:type" content="website">
+        <meta property="og:image" content="https://images.unsplash.com/photo-1685840544664-d9d4b19e4438?q=80&w=1742&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+        <meta property="og:url" content="https://benwasden.github.io/wdd231/directory.url">
+
+        <meta name="twitter:card" content="summary">
+
+        <title>Ben Wasden - WDD 231 Chamber Directory Page</title>
+    </head>
+<body>
+    <header>
+        <div id="logo">
+            <img src="images/seal.webp" alt="Seal of Petaluma" width="100" height="100" loading="lazy">
+            <div id="location-title">
+                <h1>Petaluma</h1>
+                <p>Chamber of Commerce</p>
+            </div>
+        </div>
+        <button title="Hamburger Menu Button" id="menu"></button>
+        <nav id="animateme">
+            <ul class="menuLinks">
+                <li><a href="#">Home</a></li>
+                <li><a href="directory.html" class="active">Directory</a></li>
+                <li><a href="#">Join</a></li>
+                <li><a href="#">Discovery</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="filter">
+            <input id="cards-filter" type="image" src="images/cards.webp" alt="Cards Button">
+            <input id="list-filter" type="image" src="images/list.webp" alt="List Button">
+        </div>
+        <div id="cards"></div>
+    </main>
+    <footer>
+        <div class="bottom">
+            <div id="contact-footer">
+                <h2>Petaluma Chamber of Commerce</h2>
+                <p>11 English St</p>
+                <p>Petaluma, California 94954</p>
+                <p>cityclerk@cityofpetaluma.org</p>
+                <p>(707) 778-4360</p>
+            </div>
+            <div id="social">
+                <nav class="social-links">
+                    <a href="https://twitter.com/PetalumaCityGov">
+                        <img src="images/twitter.webp" alt="Twitter Icon" width="48" height="48" loading="lazy">
+                    </a>
+                    <a href="https://www.facebook.com/cityofpetaluma/">
+                        <img src="images/facebook.webp" alt="Facebook Icon" width="48" height="48" loading="lazy">
+                    </a>
+                    <a href="https://www.youtube.com/channel/UCW4N-TOX2F_U08sNVEc4Tag">
+                        <img src="images/youtube.webp" alt="Youtube Icon" width="48" height="48" loading="lazy">
+                    </a>
+                </nav>
+            </div>
+            <div id="bens-info">
+                <p>WDD231 Class Project</p>
+                <p>Benjamin Wasden</p>
+                <p>©<span id="currentyear"></span> Petaluma Chamber of Commerce</p>
+                <p>Last Modified: <span id="lastModified"></span></p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
