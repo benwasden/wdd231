@@ -135,6 +135,9 @@ figcaption {
     margin-top: 0.5rem;
     border-radius: 3px;
 }
+.location {
+    text-align: center;
+}
 .credit-list {
     color: white;
     font-style: italic;
