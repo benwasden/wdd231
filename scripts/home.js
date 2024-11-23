@@ -182,7 +182,7 @@ function displayResults(data) {
     let desc = data.weather[0].description;
     image.setAttribute('src', iconsrc);
     image.setAttribute('alt', data.weather[0].description);
-    weatherConditions.textContent = `${desc.charAt(0).toUpperCase() + desc.slice(1)}`;
+    weatherConditions.innerHTML = `${desc.charAt(0).toUpperCase() + desc.slice(1)}`;
 }
 
 async function apiFetch() {

@@ -30,9 +30,6 @@ tableButton.addEventListener('click', () => {
 // JSON file
 const businesses = "data/members.json";
 
-// Cards
-const cards = document.querySelector("#cards");
-
 async function getBusinessData(filter){
     document.getElementById("cards").innerHTML = "";
     const response = await fetch(businesses);

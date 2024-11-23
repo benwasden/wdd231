@@ -76,47 +76,16 @@ nav.open {
     grid-template-rows: 1fr;
     transition: grid-template-rows 0.3s ease-out;
 }
-main {
-    margin: 0 auto;
-    /* max-width: 600px; */
-}
-.filter {
-    margin-top: 15px;
-    text-align: center;
-}
-#business-cards {
-    text-align: center;
-    padding: 15px;
-    margin: 15px auto;
-    box-shadow: 3px 3px 3px 3px rgb(190, 190, 190);
-    max-width: 325px;
-    border-radius: 5px;
+#hero img {
     width: 100%;
 }
-#business-cards p, #business-cards a {
-    padding: 3px;
-    text-decoration: none;
+main {
+    margin: 0 auto;
 }
-#business-cards img {
-    background-color: white;
+main li {
+    color: black;
 }
-table {
-    table-layout: fixed;
-    max-width: 900px;
-    font-size: 15px;
-    margin-left: auto;
-    margin-right: auto;
-    border-collapse: collapse;
-}
-tr:nth-child(odd) {
-    background-color: #e8e8e8;
-}
-td {
-    padding: 10px;
-}
-td a {
-    text-decoration: none;
-}
+
 footer {
     /* width: 100%; */
     background-color: var(--secondary-color);
@@ -136,6 +105,22 @@ footer h2 {
 }
 footer div {
     padding-bottom: 15px;
+}
+#business-cards {
+    text-align: center;
+    padding: 15px;
+    margin: 15px auto;
+    box-shadow: 3px 3px 3px 3px rgb(190, 190, 190);
+    max-width: 325px;
+    border-radius: 5px;
+    width: 100%;
+}
+#business-cards p, #business-cards a {
+    padding: 3px;
+    text-decoration: none;
+}
+#business-cards img {
+    background-color: white;
 }
 
 @media screen and (min-width: 800px) {
