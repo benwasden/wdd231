@@ -16,7 +16,7 @@ hamButton.addEventListener('click', () => {
     hamButton.classList.toggle('open');
 });
 
-const weatherIcon = document.getElementById("weather-icon");
+const weatherIcon = document.querySelector("#weather-icon");
 const currentTemp = document.getElementById("current-temp");
 const weatherConditions = document.getElementById("condition");
 const highTemp = document.getElementById("high-temp");
@@ -117,7 +117,7 @@ async function getBusinessData(){
     const response = await fetch(businesses);
     const data = await response.json();
     const businessData = data.businesses;
-    console.log(data);
+    // console.log(data);
 
     let eligibleBusinesses = [];
 
@@ -128,35 +128,33 @@ async function getBusinessData(){
         }
         i++;
     }
-    console.log(eligibleBusinesses);
-    makeBusinessCards(eligibleBusinesses);
+    // console.log(eligibleBusinesses);
 
-    // if () {
+    let createdBusinesses = []
 
-    // }
+    let i2 = randomNum(0, eligibleBusinesses.length);
+    // console.log(i2);
 
-    // let i = 0;
-    // while (i < 2) {
+    i2.forEach((i2) => {
+        createdBusinesses.push(eligibleBusinesses[i2])
+    })
 
-    //     let randomNum = 0;
-    //     if (valuesInArray.includes(randomNum) == false) {
-    //         randomNum = getRandomInt(1, businessData.length);
-    //         valuesInArray.push[randomNum];
-    //     }
-    //     else {
-    //         randomNum = getRandomInt(1, businessData.length);
-    //         console.log("Repeat");
-    //     }
-
-    //     businessesToCard.push(businessData[randomNum - 1]);
-    //     makeBusinessCards(businessesToCard);
-    //     i++;
-    // }
-    // console.log(businessesToCard);
+    console.log(createdBusinesses)
+    makeBusinessCards(createdBusinesses);
 }
 
-function getRandomInt(min, max) {
-    return Math.floor(Math.random() * (max - min + 1) + min);
+function randomNum(min, max) {
+    let n = [];
+    for(let i=0; i<3; i++){
+        let number = (Math.floor(Math.random() * max) +min);
+        if (n.includes(number) == false) {
+            n.push(number);
+        }
+        else {
+            i = i-1;
+        }
+    }
+    return n
 }
 
 const makeBusinessCards = (businesses) => {
@@ -166,6 +164,7 @@ const makeBusinessCards = (businesses) => {
         let name = document.createElement('h3');
         let address = document.createElement('p');
         let phone = document.createElement('p');
+        let membership = document.createElement('p');
         let link = document.createElement('p');
 
         let a = document.createElement('a');
@@ -177,6 +176,16 @@ const makeBusinessCards = (businesses) => {
         a.appendChild(aText);
 
         link.appendChild(a);
+
+        if (business.membership == 3) {
+            membership.textContent = 'Membership Level: Gold';
+        }
+        else if (business.membership == 2) {
+            membership.textContent = 'Membership Level: Silver';
+        }
+        else {
+            membership.textContent = 'Membership Level: Bronze';
+        }
 
         name.textContent = business.name;
         address.textContent = business.address;
@@ -192,6 +201,7 @@ const makeBusinessCards = (businesses) => {
         card.appendChild(name);
         card.appendChild(address);
         card.appendChild(phone);
+        card.appendChild(membership);
         card.appendChild(link);
         card.setAttribute('id', 'business-cards');
 
@@ -199,21 +209,27 @@ const makeBusinessCards = (businesses) => {
     })
 }
 
-const width = window.matchMedia("(max-width: 800px)")
+// const width = window.screen.width;
 
-function changeCardCount(width) {
-    let cardCount = 0;
-    if (width.matches) {
-        cardCount = 3;
-    }
-    else {
-        cardCount = 2;
-    }
-    return cardCount;
-}
+// function changeCardCount(width) {
+//     let cardCount = 0;
+//     if (width.matches) {
+//         cardCount = 3;
+//     }
+//     else {
+//         cardCount = 2;
+//     }
+//     return cardCount;
+// }
 
-width.addEventListener("change", function() {
-    changeCardCount(width)
-});
+// width.addEventListener("change", function() {
+//     let cardCount = 0;
+//     if (width >= 800) {
+//         cardCount = 3;
+//     }
+//     else {
+//         cardCount = 2;
+//     }
+// });
 
 getBusinessData();
