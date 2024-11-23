@@ -44,10 +44,10 @@
         <main>
             <div id="hero">
                 <picture>
-                    <source srcset="images/hero-large.webp" media="(min-width: 600px)">
-                    <img src="images/hero.webp" alt="Hero image of Petaluma" width="600">
+                    <source srcset="images/hero-large.webp" media="(min-width: 600px)" width="1200" height="659">
+                    <img src="images/hero.webp" alt="Hero image of Petaluma" width="600" height="329">
                 </picture>
-                <button id="keynote">Keynote Tickets</button>
+                <a href="#" id="call-to-action">Join Us!</a>
             </div>
             <h2>Home</h2>
             <div id="summary">
@@ -61,27 +61,31 @@
                 </section>
                 <section id="weather">
                     <h3>Current Weather</h3>
-                    <div id="weather-icon-div">
-                        <img id="weather-icon" src="" alt="">
-                    </div>
-                    <div id="weather-conditions">
-                        <p id="current-temp"></p>
-                        <p id="condition"></p>
-                        <p id="high-temp"></p>
-                        <p id="low-temp"></p>
-                        <p id="humidity"></p>
-                        <p id="sunrise"></p>
-                        <p id="sunset"></p>
+                        <div id="weather-wrapper">
+                        <div id="weather-icon-div">
+                            <img id="weather-icon" src="" alt="">
+                        </div>
+                        <div id="weather-conditions">
+                            <p id="current-temp"></p>
+                            <p id="condition"></p>
+                            <p id="high-temp"></p>
+                            <p id="low-temp"></p>
+                            <p id="humidity"></p>
+                            <p id="sunrise"></p>
+                            <p id="sunset"></p>
+                        </div>
                     </div>
                 </section>
                 <section id="forecast">
                     <h3>Weather Forecast</h3>
-                    <p>Today: <span id="today-forecast"></span></p>
-                    <p><span id="tomorrow"></span>: <span id="tomorrow-forecast"></span></p>
-                    <p><span id="two-day"></span>: <span id="two-day-forecast"></span></p>
+                    <div id="weather-forecast">
+                        <p>Today: <span id="today-forecast"></span></p>
+                        <p><span id="tomorrow"></span>: <span id="tomorrow-forecast"></span></p>
+                        <p><span id="two-day"></span>: <span id="two-day-forecast"></span></p>
+                    </div>
                 </section>
-                <div id="cards"></div>
             </div>
+            <div id="cards"></div>
         </main>
         <footer>
             <div class="bottom">

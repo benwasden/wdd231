@@ -39,16 +39,17 @@ function displayResults(data) {
     const iconsrc = `https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`;
     weatherIcon.setAttribute('src', iconsrc);
     weatherIcon.setAttribute('alt', data.weather[0].description);
+    weatherIcon.setAttribute('loading', 'lazy');
 
     let desc = data.weather[0].description;
 
     const sunTime = new Date(data.sys.sunrise * 1000);
     const setTime = new Date(data.sys.sunset * 1000);
 
-    currentTemp.innerHTML = `${data.main.temp} F`;
-    weatherConditions.innerHTML = `${desc.charAt(0).toUpperCase() + desc.slice(1)}`;
-    highTemp.innerHTML = `High: ${data.main.temp_max} F`;
-    lowTemp.innerHTML = `Low: ${data.main.temp_min} F`
+    currentTemp.innerHTML = `${Math.round(data.main.temp)} F`;
+    weatherConditions.innerHTML = `${capitalizeWords(desc)}`;
+    highTemp.innerHTML = `High: ${Math.round(data.main.temp_max)} F`;
+    lowTemp.innerHTML = `Low: ${Math.round(data.main.temp_min)} F`
     humidity.innerHTML = `Humidity: ${data.main.humidity}%`;
     sunrise.innerHTML = `Sunrise: ${sunTime.toLocaleTimeString('default', {hour: '2-digit', minute:'2-digit'})}`;
     sunset.innerHTML = `Sunset: ${setTime.toLocaleTimeString('default', {hour: '2-digit', minute:'2-digit'})}`;
@@ -81,6 +82,15 @@ function displayForecast(data) {
     twoDayForecast.innerHTML = `${Math.round(data.list[15].main.temp_max)} F`;
 }
 
+function capitalizeWords(str) {
+    const words = str.split(' ');
+    for (let i = 0; i < words.length; i++) {
+        words[i] = words[i][0].toUpperCase() + words[i].substr(1);
+    }
+
+    return words.join(' ');
+}
+
 async function apiFetch() {
     try {
         const response = await fetch(url);
@@ -98,7 +108,8 @@ async function apiFetch() {
         const response = await fetch(forecastUrl);
         if (response.ok) {
             const data2 = await response.json();
-            displayForecast(data2)
+            // console.log(data2);
+            displayForecast(data2);
         } else {
             throw Error(await response.text());
         }
@@ -139,7 +150,7 @@ async function getBusinessData(){
         createdBusinesses.push(eligibleBusinesses[i2])
     })
 
-    console.log(createdBusinesses)
+    // console.log(createdBusinesses)
     makeBusinessCards(createdBusinesses);
 }
 

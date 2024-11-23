@@ -78,14 +78,35 @@ nav.open {
 }
 #hero img {
     width: 100%;
+    height: auto;
 }
-main {
-    margin: 0 auto;
+#call-to-action {
+    position: absolute;
+    bottom: 20px;
+    right: 16px;
+    font-size: 30px;
+    padding: 10px;
+    border: 1px outset buttonborder;
+    border-radius: 3px;
+    text-decoration: none;
+    color: white;
+    background-color: var(--secondary-color);
 }
-main li {
-    color: black;
+#call-to-action:hover {
+    background-color: var(--primary-color);
 }
-
+#hero {
+    position: relative;
+}
+h2 {
+    font-size: 40px;
+    padding-left: 10px;
+}
+#events h3, #weather h3, #forecast h3 {
+    background-color: var(--secondary-color);
+    color: white;
+    padding: 10px;
+}
 footer {
     /* width: 100%; */
     background-color: var(--secondary-color);
@@ -106,15 +127,41 @@ footer h2 {
 footer div {
     padding-bottom: 15px;
 }
+#events li {
+    text-align: left;
+    color: black;
+}
+#weather-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#events, #weather, #forecast {
+    border-radius: 5px;
+    box-shadow: 3px 3px 3px 3px rgb(190, 190, 190);
+    margin: 15px auto;
+    width: 90%;
+    /* max-width: 500px; */
+}
+#weather-forecast p {
+    text-align: center;
+    font-size: 20px;
+    padding: 8px;
+}
+#cards {
+    border-top: solid 1px;
+    margin: 10px;
+}
 #business-cards {
     text-align: center;
     padding: 15px;
     margin: 15px auto;
     box-shadow: 3px 3px 3px 3px rgb(190, 190, 190);
-    max-width: 325px;
+    max-width: 400px;
     border-radius: 5px;
     width: 100%;
 }
+
 #business-cards p, #business-cards a {
     padding: 3px;
     text-decoration: none;
@@ -127,7 +174,7 @@ footer div {
     #menu {
         display: none;
     }
-    ul {
+    nav ul {
         display: flex;
         justify-content: flex-end;
     }
@@ -142,9 +189,13 @@ footer div {
     }
     #cards {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(375px, 2fr));
+        grid-template-columns: repeat(auto-fit, minmax(450px, 2fr));
     }
     #cards section {
         width: 100%;
+    }
+    #summary {
+        display: grid;
+        grid-template-columns: 600px repeat(auto-fit, minmax(350px, 2fr))
     }
 }
