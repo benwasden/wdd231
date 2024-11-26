@@ -76,6 +76,9 @@ nav.open {
     grid-template-rows: 1fr;
     transition: grid-template-rows 0.3s ease-out;
 }
+#weather-conditions p {
+    padding: 5px;
+}
 #hero img {
     width: 100%;
     height: auto;
