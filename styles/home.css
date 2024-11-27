@@ -180,6 +180,29 @@ section #completed {
 .navigation .active {
     color: rgb(189, 255, 184);
 }
+#course-details {
+    padding: 1rem;
+    max-width: 600px;
+    margin: 0 auto;
+    border: 0;
+    box-shadow: 0 0 1em gray;
+    border-radius: 5px;
+    margin-top: 50px;
+}
+#course-details::backdrop {
+    background: rgba(0, 0, 0, 0.5);
+}
+detail h2, detail h3, detail p {
+    padding: 8px;
+}
+dialog button {
+    position: absolute;
+    top: 19px;
+    right: 23px;
+    padding: .4rem 1rem;
+    font-size: 20px;
+    border-radius: 5px;
+}
 
 @media screen and (min-width: 800px) {
     #menu {

@@ -123,6 +123,28 @@ wddCoursesButton.addEventListener('click', () => {
     displayCourseInfo(courses.filter(course => course.subject == 'WDD'));
 })
 
+const dialog = document.querySelector('dialog')
+let courseDetails = document.querySelector('detail');
+
+function displayCourseDetails(course) {
+    courseDetails.innerHTML = '';
+    courseDetails.innerHTML = `
+    <button id='closeModal'>X</button>
+    <h2>${course.subject} ${course.number}</h2>
+    <h3>${course.title}</h3>
+    <p><strong>Credits</strong>: ${course.credits}</p>
+    <p><strong>Certificate</strong>: ${course.certificate}</p>
+    <p>${course.description}</p>
+    <p><strong>Technologies</strong>: ${course.technology.join(', ')}</p>
+    `
+
+    dialog.showModal();
+
+    closeModal.addEventListener('click', () => {
+        dialog.close();
+    });
+}
+
 // Function to make cards for web and computer programming certificate portion
 function displayCourseCards(filteredClasses) {
     document.querySelector('#course-displays').innerHTML = "";
@@ -137,6 +159,10 @@ function displayCourseCards(filteredClasses) {
         }
 
         card.appendChild(name);
+
+        card.addEventListener('click', () => {
+            displayCourseDetails(course);
+        })
 
         document.querySelector('#course-displays').appendChild(card);
     })
@@ -182,6 +208,7 @@ function displayResults(data) {
     let desc = data.weather[0].description;
     image.setAttribute('src', iconsrc);
     image.setAttribute('alt', data.weather[0].description);
+    image.setAttribute('loading', 'lazy');
     weatherConditions.innerHTML = `${desc.charAt(0).toUpperCase() + desc.slice(1)}`;
 }
 
