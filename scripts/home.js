@@ -1,6 +1,6 @@
 // Variables for menu button in mobile view
 const hamButton = document.querySelector('#menu');
-const navigation = document.querySelector('.navigation');
+const navigation = document.querySelector('#animateme');
 
 // Event listener for menu button
 hamButton.addEventListener('click', () => {
