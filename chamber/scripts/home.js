@@ -16,7 +16,7 @@ hamButton.addEventListener('click', () => {
     hamButton.classList.toggle('open');
 });
 
-const weatherIcon = document.querySelector("#weather-icon");
+const weatherIconDiv = document.querySelector("#weather-icon");
 const currentTemp = document.getElementById("current-temp");
 const weatherConditions = document.getElementById("condition");
 const highTemp = document.getElementById("high-temp");
@@ -37,9 +37,11 @@ const forecastUrl = 'https://api.openweathermap.org/data/2.5/forecast?lat=38.23&
 
 function displayResults(data) {
     const iconsrc = `https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`;
+    let weatherIcon = document.createElement('img');
     weatherIcon.setAttribute('src', iconsrc);
     weatherIcon.setAttribute('alt', data.weather[0].description);
     weatherIcon.setAttribute('loading', 'lazy');
+    weatherIconDiv.appendChild(weatherIcon);
 
     let desc = data.weather[0].description;
 
@@ -48,11 +50,11 @@ function displayResults(data) {
 
     currentTemp.innerHTML = `${Math.round(data.main.temp)} F`;
     weatherConditions.innerHTML = `${capitalizeWords(desc)}`;
-    highTemp.innerHTML = `High: ${Math.round(data.main.temp_max)} F`;
-    lowTemp.innerHTML = `Low: ${Math.round(data.main.temp_min)} F`
-    humidity.innerHTML = `Humidity: ${data.main.humidity}%`;
-    sunrise.innerHTML = `Sunrise: ${sunTime.toLocaleTimeString('default', {hour: '2-digit', minute:'2-digit'})}`;
-    sunset.innerHTML = `Sunset: ${setTime.toLocaleTimeString('default', {hour: '2-digit', minute:'2-digit'})}`;
+    highTemp.innerHTML = `<strong>High:</strong> ${Math.round(data.main.temp_max)} F`;
+    lowTemp.innerHTML = `<strong>Low:</strong> ${Math.round(data.main.temp_min)} F`
+    humidity.innerHTML = `<strong>Humidity:</strong> ${data.main.humidity}%`;
+    sunrise.innerHTML = `<strong>Sunrise:</strong> ${sunTime.toLocaleTimeString('default', {hour: '2-digit', minute:'2-digit'})}`;
+    sunset.innerHTML = `<strong>Sunset:</strong> ${setTime.toLocaleTimeString('default', {hour: '2-digit', minute:'2-digit'})}`;
 
     todayForecast.innerHTML = `${Math.round(data.main.temp_max)} F`;
 }
@@ -219,28 +221,5 @@ const makeBusinessCards = (businesses) => {
         document.querySelector("#cards").appendChild(card);
     })
 }
-
-// const width = window.screen.width;
-
-// function changeCardCount(width) {
-//     let cardCount = 0;
-//     if (width.matches) {
-//         cardCount = 3;
-//     }
-//     else {
-//         cardCount = 2;
-//     }
-//     return cardCount;
-// }
-
-// width.addEventListener("change", function() {
-//     let cardCount = 0;
-//     if (width >= 800) {
-//         cardCount = 3;
-//     }
-//     else {
-//         cardCount = 2;
-//     }
-// });
 
 getBusinessData();
