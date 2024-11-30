@@ -43,11 +43,35 @@
         </header>
         <main>
             <h2>Join the Chamber of Commerce!</h2>
-            <form method="get" action="thankyou.html" class="wf1">
-                <label>First Name<input type="text" name="fname" required autocomplete="given-name" title="First Name"></label>
-                <label>Last Name<input type="text" name="lname" required autocomplete="family-name" title="Last Name"></label>
-                
-            </form>
+            <div class="chamber-form">
+                <form method="get" action="thankyou.html" class="wf1">
+                    <label>First Name</label>
+                    <input type="text" name="fname" required autocomplete="given-name" title="First Name">
+                    <label>Last Name</label>
+                    <input type="text" name="lname" required autocomplete="family-name" title="Last Name">
+                    <label>Organizational Title</label>
+                    <input type="text" name="orgname" autocomplete="organization-title" title="Organizational Title">
+                    <label>Email</label>
+                    <input type="email" name="email" placeholder="someone@domain.com" required name="email" title="Email" autocomplete="email">
+                    <label>Phone</label>
+                    <input type="tel" name="phone" title="Phone Number" autocomplete="tel" required>
+                    <label>Business Name</label>
+                    <input type="text" required name="business" title="Business Name" autocomplete="organization">
+                    <label>Membership Level
+                        <select name="membership" required>
+                            <option value="" disabled selected>Please Select...</option>
+                            <option value="nonpro">Non Profit Membership</option>
+                            <option value="bronze">Bronze Membership</option>
+                            <option value="silver">Silver Membership</option>
+                            <option value="gold">Gold Membership</option>
+                        </select>
+                    </label>
+                    <label>Describe Your Business:
+                        <textarea name="description" title="Description of Business" id="description-of-business" rows="5" required></textarea>
+                    </label>
+                    <input type="submit" id="submit" value="Apply for Membership">
+                </form>
+            </div>
         </main>
         <footer>
             <div class="bottom">

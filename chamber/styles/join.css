@@ -43,6 +43,17 @@ header h1 {
     content: "x";
     color: white;
 }
+form {
+    margin: 0 auto;
+    max-width: 600px;
+}
+input[type=text], input[type=email], input[type=tel], textarea, select {
+    display: block;
+    box-sizing: border-box;
+    width: 90%;
+    margin-bottom: 10px;
+
+}
 .menuLinks {
     background-color: var(--secondary-color);
     color: white;
