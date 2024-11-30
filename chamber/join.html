@@ -12,7 +12,7 @@
         <meta name="description" content="Ben Wasden WDD231 - Petaluma Chamber Join Page">
         <meta name="author" content="Benjamin Wasden">
 
-        <meta property="og:title" content="Petaluma Chamber Home Page">
+        <meta property="og:title" content="Petaluma Chamber Join Page">
         <meta property="og:description" content="Ben Wasden's WDD231 Chamber of Commerce Join Page">
         <meta property="og:type" content="website">
         <meta property="og:image" content="https://benwasden.github.io/wdd231/chamber/images/petaluma.webp">
@@ -34,9 +34,9 @@
             <button title="Hamburger Menu Button" id="menu"></button>
             <nav id="animateme">
                 <ul class="menuLinks">
-                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="index.html">Home</a></li>
                     <li><a href="directory.html">Directory</a></li>
-                    <li><a href="#">Join</a></li>
+                    <li><a href="join.html" class="active">Join</a></li>
                     <li><a href="#">Discovery</a></li>
                 </ul>
             </nav>
@@ -44,7 +44,7 @@
         <main>
             <div class="chamber-form">
                 <h2>Join the Chamber of Commerce!</h2>
-                <form method="get" action="thankyou.html" class="wf1">
+                <form method="get" action="thankyou.html" enctype="text/plain" class="wf1">
                     <label>First Name<input type="text" name="fname" required autocomplete="given-name" title="First Name"></label>
                     <label>Last Name<input type="text" name="lname" required autocomplete="family-name" title="Last Name"></label>
                     <label>Organizational Title<input type="text" name="orgname" autocomplete="organization-title" title="Organizational Title"></label>
@@ -83,7 +83,6 @@
                 </section>
             </div>
             <dialog id="membership-dialog">
-                <detail></detail>
             </dialog>
         </main>
         <footer>

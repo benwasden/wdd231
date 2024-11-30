@@ -16,14 +16,20 @@ hamButton.addEventListener('click', () => {
     hamButton.classList.toggle('open');
 });
 
+let date = new Date();
+// document.getElementById('date-and-time').value = date.toDateString();
+const dateAndTime = document.getElementById('submit');
+dateAndTime.addEventListener('click', () => {
+    document.getElementById('date-and-time').value = date.toLocaleString();
+})
+
+
 const tiers = "data/membershipLevels.json";
 
 async function getMembershipTiers() {
     const response = await fetch(tiers);
     const data = await response.json();
     const membershipTiers = data.tiers;
-
-    console.log(membershipTiers);
 
     nonProfit = document.getElementById('non-profit');
     nonProfit.addEventListener('click', () => {
@@ -47,14 +53,15 @@ async function getMembershipTiers() {
 }
 
 const dialog = document.querySelector('dialog');
-let membershipDetails = document.querySelector('detail');
+let membershipDetails = document.createElement('detail');
+dialog.appendChild(membershipDetails);
 
 function displayMembershipDetails(tier) {
     membershipDetails.innerHTML = '';
     membershipDetails.innerHTML = `
     <button id='closeModal'>X</button>
     <h4>${tier.title} Membership</h4>
-    <p><strong>Cost:</strong> $${tier.cost}
+    <p><strong>Cost:</strong> $${tier.cost} per month
     <p><strong>Benefits:</strong> ${tier.benefits}
     <p><strong>Conditions:</strong> ${tier.conditions}`
 
