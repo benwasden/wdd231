@@ -43,16 +43,67 @@ header h1 {
     content: "x";
     color: white;
 }
+.chamber-form {
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-bottom: 30px;
+}
+.chamber-form h2, .membership-levels h2 {
+    text-align: center;
+    font-size: 25px;
+    padding: 15px;
+}
+h3 {
+    font-size: 20px;
+}
+.membership-levels section {
+    margin: 0 auto;
+    margin-bottom: 20px;
+    border: solid 1px black;
+    padding: 15px;
+    max-width: 300px;
+    color: white;
+    background-color: var(--secondary-color);
+    border-radius: 5px;
+}
+.membership-levels section:hover {
+    background-color: #374947;
+}
 form {
+    display: block;
     margin: 0 auto;
     max-width: 600px;
+    font-size: 18px;
 }
 input[type=text], input[type=email], input[type=tel], textarea, select {
-    display: block;
     box-sizing: border-box;
-    width: 90%;
+    width: 100%;
     margin-bottom: 10px;
-
+    padding: 5px;
+}
+input[type=submit] {
+    display: block;
+    margin: auto;
+    padding: 10px;
+    font-size: 18px;
+    font-family: var(--heading-font);
+    background-color: var(--primary-color);
+    color: white;
+}
+input[type=submit]:hover {
+    background-color: #164d6f;
+}
+:required {
+    border-left: solid 4px red;
+}
+:required:valid {
+    border-left: solid 4px green;
+}
+.membership-levels {
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto;
+    border-top: solid 1px black;
 }
 .menuLinks {
     background-color: var(--secondary-color);

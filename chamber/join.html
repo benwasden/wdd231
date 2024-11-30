@@ -5,7 +5,7 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-        <script src="scripts/home.js" defer></script>
+        <script src="scripts/join.js" defer></script>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width">
         <link rel="icon" href="images/chicken.ico">
@@ -42,21 +42,15 @@
             </nav>
         </header>
         <main>
-            <h2>Join the Chamber of Commerce!</h2>
             <div class="chamber-form">
+                <h2>Join the Chamber of Commerce!</h2>
                 <form method="get" action="thankyou.html" class="wf1">
-                    <label>First Name</label>
-                    <input type="text" name="fname" required autocomplete="given-name" title="First Name">
-                    <label>Last Name</label>
-                    <input type="text" name="lname" required autocomplete="family-name" title="Last Name">
-                    <label>Organizational Title</label>
-                    <input type="text" name="orgname" autocomplete="organization-title" title="Organizational Title">
-                    <label>Email</label>
-                    <input type="email" name="email" placeholder="someone@domain.com" required name="email" title="Email" autocomplete="email">
-                    <label>Phone</label>
-                    <input type="tel" name="phone" title="Phone Number" autocomplete="tel" required>
-                    <label>Business Name</label>
-                    <input type="text" required name="business" title="Business Name" autocomplete="organization">
+                    <label>First Name<input type="text" name="fname" required autocomplete="given-name" title="First Name"></label>
+                    <label>Last Name<input type="text" name="lname" required autocomplete="family-name" title="Last Name"></label>
+                    <label>Organizational Title<input type="text" name="orgname" autocomplete="organization-title" title="Organizational Title"></label>
+                    <label>Email<input type="email" name="email" placeholder="someone@domain.com" required title="Email" autocomplete="email"></label>
+                    <label>Phone<input type="tel" name="phone" title="Phone Number" autocomplete="tel" required></label>
+                    <label>Business Name<input type="text" required name="business" title="Business Name" autocomplete="organization"></label>
                     <label>Membership Level
                         <select name="membership" required>
                             <option value="" disabled selected>Please Select...</option>
@@ -69,9 +63,28 @@
                     <label>Describe Your Business:
                         <textarea name="description" title="Description of Business" id="description-of-business" rows="5" required></textarea>
                     </label>
+                    <input type="hidden" name="fecha" id="date-and-time" title="Timestamp" value="">
                     <input type="submit" id="submit" value="Apply for Membership">
                 </form>
             </div>
+            <div class="membership-levels">
+                <h2>Membership Levels</h2>
+                <section class="animation">
+                    <h3 id="non-profit">Non Profit Membership</h3>
+                </section>
+                <section class="animation">
+                    <h3 id="bronze">Bronze Membership</h3>
+                </section>
+                <section class="animation">
+                    <h3 id="silver">Silver Membership</h3>
+                </section>
+                <section class="animation">
+                    <h3 id="gold">Gold Membership</h3>
+                </section>
+            </div>
+            <dialog id="membership-dialog">
+                <detail></detail>
+            </dialog>
         </main>
         <footer>
             <div class="bottom">
