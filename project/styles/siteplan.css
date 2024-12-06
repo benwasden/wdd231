@@ -1,0 +1,73 @@
+:root {
+    --primary-color: #003049;
+    --secondary-color: #d62828;
+
+    --heading-font: "Funnel Display", sans-serif;
+    --paragraph-font: "Montserrat", sans-serif;
+}
+header {
+    background-color: var(--primary-color);
+    color: white;
+}
+header h1 {
+    font-family: var(--heading-font);
+    margin-left: 10px;
+}
+#logo {
+    display: flex;
+    padding: 10px;
+    align-items: center;
+}
+main {
+    font-family: var(--paragraph-font);
+
+}
+.card {
+    border: solid 1px black;
+    margin: 10px;
+    border-radius: 3px;
+}
+h2 {
+    color: white;
+    background-color: var(--secondary-color);
+    padding: 10px;
+    margin: 0;
+}
+p, li {
+    padding: 5px;
+}
+#heading-font {
+    font-family: var(--heading-font);
+}
+figure img {
+    width: 100%;
+    max-width: 600px;
+}
+figure {
+    text-align: center;
+    border: solid 1px black;
+    margin: 15px;
+    padding: 10px;
+    border-radius: 3px;
+}
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-family: var(--paragraph-font);
+}
+@media screen and (min-width: 800px) {
+    div {
+        display: flex;
+        justify-content: center;
+    }
+    main {
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+}
