@@ -230,23 +230,21 @@ dialog button {
 }
 @keyframes slide-side {
     from {
-        translate: 150vw 0;
+        transform: translate(150vw);
     }
 
     to {
-        translate: 0 0;
+        transform: translate(0);
     }
 }
 
 @keyframes slide-in {
     from {
-        translate: 0 150vw;
-        scale: 200% 1;
+        transform: translateY(150vw);
     }
 
     to {
-        translate: 0 0;
-        scale: 100% 1;
+        transform: translateY(-50%);
     }
 }
 
