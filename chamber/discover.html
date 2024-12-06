@@ -1,5 +1,5 @@
-<!doctype html>
-<html lang="en-US">
+<!DOCTYPE html>
+<html lang="en">
     <head>
         <link rel="stylesheet" href="styles/home.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -9,18 +9,18 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width">
         <link rel="icon" href="images/chicken.ico">
-        <meta name="description" content="Ben Wasden WDD231 - Petaluma Chamber Home Page">
+        <meta name="description" content="Ben Wasden WDD231 - Petaluma Chamber Discover Page">
         <meta name="author" content="Benjamin Wasden">
 
-        <meta property="og:title" content="Petaluma Chamber Home Page">
-        <meta property="og:description" content="Ben Wasden's WDD231 Chamber of Commerce Home Page">
+        <meta property="og:title" content="Petaluma Chamber Discover Page">
+        <meta property="og:description" content="Ben Wasden's WDD231 Chamber of Commerce Discover Page">
         <meta property="og:type" content="website">
         <meta property="og:image" content="https://benwasden.github.io/wdd231/chamber/images/petaluma.webp">
-        <meta property="og:url" content="https://benwasden.github.io/wdd231/chamber/index.html">
+        <meta property="og:url" content="https://benwasden.github.io/wdd231/chamber/discover.html">
 
         <meta name="twitter:card" content="summary">
 
-        <title>Petaluma Chamber of Commerce Home Page</title>
+        <title>Petaluma Chamber of Commerce Discover Page</title>
     </head>
     <body>
         <header>
@@ -34,56 +34,15 @@
             <button title="Hamburger Menu Button" id="menu"></button>
             <nav id="animateme">
                 <ul class="menuLinks">
-                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="index.html">Home</a></li>
                     <li><a href="directory.html">Directory</a></li>
                     <li><a href="join.html">Join</a></li>
-                    <li><a href="discover.html">Discovery</a></li>
+                    <li><a href="discover.html" class="active">Discovery</a></li>
                 </ul>
             </nav>
         </header>
         <main>
-            <div id="hero">
-                <picture>
-                    <source srcset="images/hero-large.webp" media="(min-width: 600px)" width="1200" height="344">
-                    <img src="images/hero.webp" alt="Hero image of Petaluma" width="600" height="329">
-                </picture>
-                <a href="join.html" id="call-to-action">Join Us!</a>
-            </div>
-            <h2 class="header-h2">Home</h2>
-            <div id="summary">
-                <section id="events">
-                    <h3>Events</h3>
-                    <ul>
-                        <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae, velit.</li>
-                        <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo, numquam.</li>
-                        <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium, laboriosam.</li>
-                    </ul>
-                </section>
-                <section id="weather">
-                    <h3>Current Weather</h3>
-                        <div id="weather-wrapper">
-                        <div id="weather-icon"></div>
-                        <div id="weather-conditions">
-                            <p id="current-temp"></p>
-                            <p id="condition"></p>
-                            <p id="high-temp"></p>
-                            <p id="low-temp"></p>
-                            <p id="humidity"></p>
-                            <p id="sunrise"></p>
-                            <p id="sunset"></p>
-                        </div>
-                    </div>
-                </section>
-                <section id="forecast">
-                    <h3>Weather Forecast</h3>
-                    <div id="weather-forecast">
-                        <p>Today: <span id="today-forecast"></span></p>
-                        <p><span id="tomorrow"></span>: <span id="tomorrow-forecast"></span></p>
-                        <p><span id="two-day"></span>: <span id="two-day-forecast"></span></p>
-                    </div>
-                </section>
-            </div>
-            <div id="cards"></div>
+
         </main>
         <footer>
             <div class="bottom">
@@ -114,6 +73,6 @@
                     <p>Last Modified: <span id="lastModified"></span></p>
                 </div>
             </div>
-        </footer>                
+        </footer>  
     </body>
 </html>
