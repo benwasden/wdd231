@@ -15,3 +15,24 @@ hamButton.addEventListener('click', () => {
     navigation.classList.toggle('open');
     hamButton.classList.toggle('open');
 });
+
+const visit = document.getElementById('visits');
+
+if (localStorage.getItem('lastVisit') == null) {
+    visit.innerHTML = "Welcome! Let us know if you have any questions."
+    localStorage.setItem('lastVisit', new Date());
+}
+else {
+    const lastVisit = new Date(localStorage.getItem('lastVisit'));
+    let currentVisit = new Date();
+
+    let dayDiff = Math.round((currentVisit.getTime() - lastVisit.getTime()) / (1000 * 3600 * 24));
+    // console.log(dayDiff)
+
+    if (dayDiff <= 0) {
+        visit.innerHTML = "Back so soon! Awesome!";
+    }
+    else {
+        visit.innerHTML = `You last visited ${dayDiff} days ago.`;
+    }
+}
