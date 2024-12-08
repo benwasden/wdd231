@@ -32,6 +32,9 @@ else {
     if (dayDiff <= 0) {
         visit.innerHTML = "Back so soon! Awesome!";
     }
+    else if (dayDiff == 1) {
+        visit.innerHTML = `You last visited ${dayDiff} day ago.`;
+    }
     else {
         visit.innerHTML = `You last visited ${dayDiff} days ago.`;
     }
