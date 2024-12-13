@@ -14,8 +14,9 @@ header {
     background-color: var(--primary-color);
     color: white;
 }
-header h1 {
+header h1, h2 {
     font-family: var(--heading-font);
+    margin-left: 8px;
 }
 #logo {
     display: flex;
@@ -95,6 +96,36 @@ nav.open {
 #hero {
     position: relative;
 }
+
+h3, figcaption {
+    background-color: var(--secondary-color);
+    color: white;
+    padding: 10px;
+    text-align: left;
+    font-family: var(--heading-font);
+    font-size: 20px;
+    font-style: bold;
+}
+#welcome, #why-build, #my-build {
+    border-radius: 5px;
+    box-shadow: 3px 3px 3px 3px rgb(190, 190, 190);
+    margin: 15px auto;
+    width: 90%;
+}
+p {
+    padding: 8px;
+}
+figure img {
+    width: 100%;
+    height: auto;
+    max-width: 300px;
+    margin: 8px;
+}
+figure {
+    text-align: center;
+}
+/* I decided against having two columns in mobile view for the lower part - it made the text harder to read and made the site as a whole less cohesive in my opinion */
+
 footer {
     display: flex;
     justify-content: center;
@@ -115,5 +146,17 @@ footer {
     }
     nav {
         grid-template-rows: 1fr;
+    }
+    figure img {
+        transition: all .1s ease-in-out;
+    }
+    figure img:hover {
+        transform: scale(1.02);
+        box-shadow: 0 0 10px gray;
+    }
+    #home-main {
+        display: grid;
+        grid-template-columns: 50% 25% 25%;
+        margin: 0 auto;
     }
 }
