@@ -39,37 +39,39 @@
             </nav>
         </header>
         <main>
-            <h2>Picking Parts for a PC</h2>
-            <div id="questions">
-                <p>There are many factors to consider when you're shopping for PC parts. What is your PC going to be used for? Am I using it for video editing, 3d modeling, gaming, or word processing? This question will help determine what parts to prioritize.</p>
-                <p>This form will help guide your buying decision with current recommendations for parts, given your use case and budget.</p>
-            </div>
-            <div class="form">
-                <h3>Personalized Parts Recommendations</h3>
-                <form method="get" action="build.html" enctype="text/plain" class="wf1">
-                    <label>First Name<input type="text" name="fname" required autocomplete="given-name" title="First Name"></label>
-                    <label>Last Name<input type="text" name="lname" required autocomplete="family-name" title="Last Name"></label>
-                    <label>Email<input type="email" name="email" placeholder="someone@domain.com" required title="Email" autocomplete="email"></label>
-                    <label>Use Case
-                        <select name="usecase" required>
-                            <option value="" disabled selected>Please Select...</option>
-                            <option value="gaming">Gaming</option>
-                            <option value="rendering">Rendering or Modeling</option>
-                            <option value="development">Developing</option>
-                        </select>
-                    </label>
-                    <label>Budget
-                        <select name="usecase" required>
-                            <option value="" disabled selected>Please Select...</option>
-                            <option value="600">$600</option>
-                            <option value="1200">$1200</option>
-                            <option value="2000">$2000</option>
-                        </select>
-                    </label>
-                    <input type="hidden" name="fecha" id="date-and-time" title="Timestamp" value="">
-                    <input type="submit" id="submit" value="Get Your Parts List">
-                </form>
-            </div>
+            <section id="form-page">
+                <h2>Picking Parts for a PC</h2>
+                <div id="questions">
+                    <p>There are many factors to consider when you're shopping for PC parts. What is your PC going to be used for? Am I using it for video editing, 3d modeling, gaming, or word processing? This question will help determine what parts to prioritize.</p>
+                    <p>This form will help guide your buying decision with current recommendations for parts, given your use case and budget.</p>
+                </div>
+                <div class="form">
+                    <h3>Personalized Parts Recommendations</h3>
+                    <form method="get" action="build.html" enctype="text/plain" class="wf1">
+                        <label>First Name<input type="text" name="fname" required autocomplete="given-name" title="First Name"></label>
+                        <label>Last Name<input type="text" name="lname" required autocomplete="family-name" title="Last Name"></label>
+                        <label>Email<input type="email" name="email" placeholder="someone@domain.com" required title="Email" autocomplete="email"></label>
+                        <label>Use Case
+                            <select name="usecase" required>
+                                <option value="" disabled selected>Please Select...</option>
+                                <option value="gaming">Gaming</option>
+                                <option value="rendering">Rendering or Modeling</option>
+                                <option value="development">Developing</option>
+                            </select>
+                        </label>
+                        <label>Budget
+                            <select name="usecase" required>
+                                <option value="" disabled selected>Please Select...</option>
+                                <option value="600">$600</option>
+                                <option value="1200">$1200</option>
+                                <option value="2000">$2000</option>
+                            </select>
+                        </label>
+                        <input type="hidden" name="fecha" id="date-and-time" title="Timestamp" value="">
+                        <input type="submit" id="submit" value="Get Your Parts List">
+                    </form>
+                </div>
+            </section>
         </main>
         <footer>
             <p>©<span id="currentyear"></span> | Benjamin Wasden | United States, California</p>
