@@ -107,7 +107,7 @@ function showBuildParts(usecase) {
     <p><strong>RAM:</strong> ${usecase[0].ram}
     <p><strong>Graphics Card:</strong> ${usecase[0].gpu}
     <p><strong>Case:</strong> ${usecase[0].case}
-    <p><strong>Power Supply</strong> ${usecase[0].psu}`;
+    <p><strong>Power Supply:</strong> ${usecase[0].psu}`;
 }
 
 function capitalizeWords(str) {
