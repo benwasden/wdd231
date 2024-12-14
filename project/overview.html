@@ -6,7 +6,7 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-        <script src="scripts/home.js" defer></script>
+        <script src="scripts/overview.js" defer></script>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width">
         <link rel="icon" href="images/computer.ico">
@@ -40,7 +40,60 @@
             </nav>
         </header>
         <main>
-
+            <section id="main-parts-overview">
+                <h2>The Parts of a Computer</h2>
+                <p>Click on the icons to learn more!</p>
+                <section class="parts">
+                    <h3>There are at least 6 parts to every computer:</h3>
+                    <div class="parts-cards">
+                        <figure class="part" id="cpu">
+                            <figcaption>CPU</figcaption>
+                            <img src="images/parts/cputop.webp" alt="Top of CPU" loading="lazy">
+                        </figure>
+                        <figure class="part" id="cooler">
+                            <figcaption>CPU Cooler</figcaption>
+                            <img src="images/parts/cooler.webp" alt="CPU Cooler" loading="lazy">
+                        </figure>
+                        <figure class="part" id="motherboard">
+                            <figcaption>Motherboard</figcaption>
+                            <img src="images/parts/mobo.webp" alt="Motherboard" loading="lazy">
+                        </figure>
+                        <figure class="part" id="ram">
+                            <figcaption>RAM</figcaption>
+                            <img src="images/parts/ram.webp" alt="Random Access Memory" loading="lazy">
+                        </figure>
+                        <figure class="part" id="psu">
+                            <figcaption>Power Supply</figcaption>
+                            <img src="images/parts/psu.webp" alt="Power Supply" loading="lazy">
+                        </figure>
+                        <figure class="part" id="ssd">
+                            <figcaption>Storage Drive</figcaption>
+                            <img src="images/parts/ssd.webp" alt="Solid State Drive" loading="lazy">
+                        </figure>
+                    </div>
+                    <h3>These other parts are often included as well:</h3>
+                    <div class="parts-cards">
+                        <figure class="part" id="case">
+                            <figcaption>Case</figcaption>
+                            <img src="images/parts/case.webp" alt="Computer Case" loading="lazy">
+                        </figure>
+                        <figure class="part" id="gpu">
+                            <figcaption>Graphics Card</figcaption>
+                            <img src="images/parts/3090.webp" alt="Graphics Card" loading="lazy">
+                        </figure>
+                        <figure class="part" id="expansionCard">
+                            <figcaption>Other Expansion Cards</figcaption>
+                            <img src="images/parts/m2ssd.webp" alt="M.2 SSD" loading="lazy">
+                        </figure>
+                        <figure class="part" id="fan">
+                            <figcaption>Case Fans</figcaption>
+                            <img src="images/parts/fan.webp" alt="Computer Fan" loading="lazy">
+                        </figure>
+                    </div>
+                </section>
+            </section>
+            <dialog id="parts-details">
+            </dialog>
         </main>
         <footer>
             <p>©<span id="currentyear"></span> | Benjamin Wasden | United States, California</p>

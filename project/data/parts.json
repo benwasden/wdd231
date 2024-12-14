@@ -1,0 +1,54 @@
+{
+    "parts": [
+        {
+            "name": "CPU",
+            "summary": "The 'brains' of a PC",
+            "longdesc": "It handles the processing of tasks you give to a computer. Unlike GPUs, CPUs are more general purpose parts that handle many different tasks. Just like everything else, it's completely useless without a motherboard to plug into."
+        },
+        {
+            "name": "Cooler",
+            "summary": "Cools the CPU",
+            "longdesc": "CPU coolers come in a wide range of styles and types, from traditional air cooling to water cooling and more. Generally, I suggest air cooling for safety and reliability."
+        },
+        {
+            "name": "Motherboard",
+            "summary": "The 'skeleton' of a PC",
+            "longdesc": "The motherboard connects every other part to each other, taking power from the power supply and delivering it to the parts that need it. Motherboards come in a wide variety of sizes, including small ones that fit in cases the size of a shoebox, to huge ones that can take two or more CPUs."
+        },
+        {
+            "name": "RAM",
+            "summary": "Small amount of storage that a PC can access",
+            "longdesc": "RAM is much, much faster than hard drives and even SSDs. These days, RAM can reach speeds that are over 5 times faster than even the fastest SSDs today. This allows the CPU to store small amounts of information that it needs quick access to."
+        },
+        {
+            "name": "Power Supply",
+            "summary": "Provides power to the whole computer",
+            "longdesc": "The Power Supply is perhaps the only dangerous part of a computer. This component is critical, and while you can definitely cut corners on parts if you're on a budget, I absolutely would not cheap out on your power supply. This part provides power to everything else, and you want a reliable unit."
+        },
+        {
+            "name": "Storage",
+            "summary": "Where all of your data is stored",
+            "longdesc": "This is where your operating system (Windows, Linux, etc.) will go, along with any files. Between the two main types (Hard Drives and SSDs), you'll almost always go for the latter these days for speed and reliability."
+        },
+        {
+            "name": "Case",
+            "summary": "The house for your PC",
+            "longdesc": "Computer cases are where all of your components are stored. While not strictly necessary, they offer a safe place to put your components and help to keep them clean from dust. Like motherboards, cases come in a wide variety of sizes and shapes."
+        },
+        {
+            "name": "Graphics Card",
+            "summary": "For modeling, gaming, and more",
+            "longdesc": "The processor of a graphics card is called the 'GPU' or graphics processing unit. They come in a wide variety of models, from cheap, small cards just meant to let you plug in more monitors, to massive ones that are almost their own computers by themselves."
+        },
+        {
+            "name": "Expansion Cards",
+            "summary": "Add functionality to your PC",
+            "longdesc": "Many other cards can be connected to computers as well, some over the PCIE slot like graphics cards, and some over an m.2 slot. These can add wifi, sound, more USB ports, and more."
+        },
+        {
+            "name": "Fans",
+            "summary": "Cool your whole PC",
+            "longdesc": "Case Fans are there to help direct cool air to your components and exhaust hot air out of the case. While technically possible to build a computer with no fans at all, most PCs these days will have a fan of some kind."
+        }
+    ]
+}

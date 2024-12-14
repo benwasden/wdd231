@@ -121,9 +121,22 @@ figure img {
     max-width: 300px;
     margin: 8px;
 }
-figure {
+figure, #main-parts-overview {
     text-align: center;
 }
+.part figcaption {
+    text-align: center;
+    background-color: var(--primary-color);
+}
+.part {
+    border: solid 1px black;
+    margin: 15px;
+    border-radius: 5px;
+}
+#main-parts-overview h2 {
+    font-size: 28px;
+}
+
 /* I decided against having two columns in mobile view for the lower part - it made the text harder to read and made the site as a whole less cohesive in my opinion */
 
 footer {
@@ -136,6 +149,53 @@ footer {
     padding-top: 10px;
     padding-bottom: 10px;
 }
+#parts-details {
+    padding: 1rem;
+    max-width: 600px;
+    margin: 0 auto;
+    border: 0;
+    box-shadow: 0 0 1em gray;
+    border-radius: 5px;
+    position: fixed;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    animation: 0.5s alternate slide-in;
+}
+
+#parts-details::backdrop {
+    background: rgba(0, 0, 0, 0.5);
+}
+
+detail h4, detail p {
+    padding: 8px;
+}
+detail h4 {
+    background-color: var(--secondary-color);
+    color: white;
+    font-size: 25px;
+}
+
+dialog button {
+    position: absolute;
+    top: 19px;
+    right: 23px;
+    padding: .4rem 1rem;
+    font-size: 20px;
+    border-radius: 5px;
+}
+
+@keyframes slide-in {
+    from {
+        transform: translateY(150vw);
+    }
+
+    to {
+        transform: translateY(-50%);
+    }
+}
+
+
 @media screen and (min-width: 800px) {
     #menu {
         display: none;
@@ -147,10 +207,10 @@ footer {
     nav {
         grid-template-rows: 1fr;
     }
-    figure img {
+    figure img, .part:hover {
         transition: all .1s ease-in-out;
     }
-    figure img:hover {
+    figure img:hover, .part:hover {
         transform: scale(1.02);
         box-shadow: 0 0 10px gray;
     }
@@ -158,5 +218,9 @@ footer {
         display: grid;
         grid-template-columns: 50% 25% 25%;
         margin: 0 auto;
+    }
+    .parts-cards {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(375px, 2fr));
     }
 }
