@@ -161,7 +161,7 @@ footer {
     transform: translateY(-50%);
     animation: 0.5s alternate slide-in;
 }
-footer a {
+footer a, footer a:hover, footer a:active, footer a:visited {
     font-style: none;
     color: white;
 }

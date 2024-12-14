@@ -174,3 +174,15 @@ footer {
     padding-top: 10px;
     padding-bottom: 10px;
 }
+@media screen and (min-width: 800px) {
+    #menu {
+        display: none;
+    }
+    nav ul {
+        display: flex;
+        justify-content: flex-end;
+    }
+    nav {
+        grid-template-rows: 1fr;
+    }
+}
