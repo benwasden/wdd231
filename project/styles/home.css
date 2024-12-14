@@ -161,6 +161,10 @@ footer {
     transform: translateY(-50%);
     animation: 0.5s alternate slide-in;
 }
+footer a {
+    font-style: none;
+    color: white;
+}
 
 #parts-details::backdrop {
     background: rgba(0, 0, 0, 0.5);
