@@ -1,6 +1,6 @@
 :root {
     --primary-color: #003049;
-    --secondary-color: #d62828;
+    --secondary-color: #b12020;
 
     --heading-font: "Funnel Display", sans-serif;
     --paragraph-font: "Montserrat", sans-serif;
@@ -55,12 +55,12 @@ header h1, h2 {
     color: white;
 }
 .menuLinks a:hover {
-    background-color: #4f4a42;
+    background-color: #a41e1e;
     color: #f9fdc4;
     font-weight: 700;
 }
 .menuLinks .active {
-    color: #cbfdc4;
+    color: #75ff9f;
 }
 nav {
     display: grid;
@@ -104,7 +104,6 @@ h3, figcaption {
     text-align: left;
     font-family: var(--heading-font);
     font-size: 20px;
-    font-style: bold;
 }
 #welcome, #why-build, #my-build {
     border-radius: 5px;
